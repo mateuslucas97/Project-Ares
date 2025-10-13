@@ -183,13 +183,16 @@ python3 ids_dashboard_completo.py
 
 ## 🔧 API REST
 
-# Estatísticas do sistema
+Estatísticas do sistema
+
 curl http://localhost:5001/api/stats
 
-# Alertas recentes
+Alertas recentes
+
 curl http://localhost:5001/api/alerts/today
 
-# IPs bloqueados
+IPs bloqueados
+
 curl http://localhost:5001/api/ips/blocked
 
 Endpoints Principais:
@@ -207,15 +210,25 @@ Endpoints Principais:
 
 IDS-IPS-System/
 ├── src/                    # Código fonte principal
+
 │   ├── ids_dashboard_completo.py    # Dashboard web
+
 │   ├── log_processor.py             # Processador de logs
+
 │   ├── zeek_integrator.py           # Integrador Zeek
+
 │   └── start_system.py              # Orquestrador
+
 ├── scripts/               # Scripts de suporte
+
 ├── docs/                 # Documentação técnica
+
 ├── configs/              # Arquivos de configuração
+
 ├── requirements.txt      # Dependências Python
+
 ├── LICENSE              # Licença MIT
+
 └── README.md           # Este arquivo
 
 ## 🛠️ Desenvolvimento
@@ -223,19 +236,25 @@ IDS-IPS-System/
 Scripts Funcionais
 
 ids_dashboard_completo.py -> Dashboard web completo
+
 log_processor.py -> Processamento de logs do Suricata
+
 zeek_integrator.py -> Integração com análise Zeek
+
 start_system.py -> Inicialização coordenada
 
 ## 🔍 Monitoramento e Debug
 
-# Verificar serviços
+Verificar serviços
+
 ./scripts/diagnose_system.sh
 
-# Logs do Suricata
+Logs do Suricata
+
 tail -f /var/log/suricata/eve.json
 
-# Status da API
+Status da API
+
 curl http://localhost:5001/api/stats
 
 ## 🤝 Contribuição
