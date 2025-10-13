@@ -60,7 +60,8 @@ Sistema IDS/IPS desenvolvido para a SCPMSO com foco em:
 
 ## 🏗️ Arquitetura do Sistema
 
-![alt text](Diagrama-IDS-IPS-1.png)
+<img width="1939" height="1946" alt="Diagrama-IDS-IPS-1" src="https://github.com/user-attachments/assets/09055756-1978-45fc-b93c-72804c979e61" />
+
 
 ## Stack Tecnológica
 
