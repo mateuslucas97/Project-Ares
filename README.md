@@ -79,31 +79,42 @@ Sistema IDS/IPS desenvolvido para a SCPMSO com foco em:
 
 ## ⚡ Instalação Rápida
 
-## Pré-requisitos
+Pré-requisitos
 
-# Ubuntu/Debian/Kali Linux
+Ubuntu/Debian/Kali Linux
+
 sudo apt update
+
 sudo apt install python3 python3-pip python3-venv suricata zeek
 
 ## 🛠️ Configuração do Sistema
 
-# 1. Clonar repositório
+1. Clonar repositório
+
 git clone https://github.com/mateuslucas97/IDS-IPS-System.git
+
 cd IDS-IPS-System
 
-# 2. Configurar ambiente virtual
+2. Configurar ambiente virtual
+
 python3 -m venv ids-env
+
 source ids-env/bin/activate
 
-# 3. Instalar dependências
+3. Instalar dependências
+
 pip install -r requirements.txt
 
-# 4. Configurar diretórios
+4. Configurar diretórios
+
 sudo mkdir -p /opt/ids
+
 sudo chown $USER:$USER /opt/ids
 
-# 5. Configurar permissões de rede
+5. Configurar permissões de rede
+
 sudo setcap cap_net_raw,cap_net_admin=eip /usr/bin/suricata
+
 sudo setcap cap_net_raw,cap_net_admin=eip /usr/bin/zeek
 
 ## Configuração do Suricata
@@ -123,11 +134,14 @@ af-packet:
 
 ## Inicialização
 
-# Ambiente virtual
+Ambiente virtual
+
 source ids-env/bin/activate
 
-# Dashboard completo
+Dashboard completo
+
 cd src
+
 python3 ids_dashboard_completo.py
 
 ## 📊 Acesso ao Dashboard
