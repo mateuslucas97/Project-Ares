@@ -38,9 +38,6 @@ O **Projeto Ares** é um sistema IDS/IPS desenvolvido com foco em:
 
 ## 🏗️ Arquitetura do Sistema
 
-<img width="627" height="513" alt="image" src="https://github.com/user-attachments/assets/844e1a46-7972-42d7-9084-3d3a75a25d2c" />
-
-
 ```mermaid
 graph TB
     A[🌐 Redes Corporativas] --> B[🛡️ Suricata IDS/IPS]
